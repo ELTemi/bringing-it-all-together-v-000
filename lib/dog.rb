@@ -87,7 +87,7 @@ class Dog
       #binding.pry
     else
         #binding.pry
-      dog = self.create({name: name, breed: breed})
+      dog = self.create(name: name, breed: breed)
     end
     dog
 
