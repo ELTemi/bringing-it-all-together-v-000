@@ -87,6 +87,7 @@ class Dog
       #binding.pry
     else
       dog = self.create(attributes)
+      dog.save
     end
     dog
     #binding.pry
