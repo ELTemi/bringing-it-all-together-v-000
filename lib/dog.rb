@@ -86,10 +86,11 @@ class Dog
       dog = self.new_from_db([dog1[0], dog1[1], dog1[2]])
       #binding.pry
     else
+        binding.pry
       dog = self.create({name: name, breed: breed})
     end
     dog
-    binding.pry
+  
   end
 
   def self.find_by_name(name)
