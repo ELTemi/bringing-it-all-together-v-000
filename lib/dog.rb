@@ -86,7 +86,7 @@ class Dog
       dog = self.new_from_db([dog1[0], dog1[1], dog1[2]])
       #binding.pry
     else
-      dog = self.create(attributes)
+      dog = self.create({name: name, breed: breed})
     end
     dog
     #binding.pry
