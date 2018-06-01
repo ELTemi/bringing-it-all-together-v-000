@@ -2,11 +2,9 @@ require "pry"
 class Dog
   attr_accessor :id, :name, :breed
 
-  def initialize(attributes)
-    attributes.each do |key, value|
-      self.send("#{key}=", value)
-    end
-    #binding.pry
+  def initialize(name:, breed:)
+    @name = name
+    @breed = breed
   end
   #binding.pry
 
