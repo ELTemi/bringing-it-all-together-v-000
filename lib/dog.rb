@@ -89,7 +89,7 @@ class Dog
       dog = self.create(attributes)
     end
     dog
-    building.pry
+    binding.pry
   end
 
   def self.find_by_name(name)
