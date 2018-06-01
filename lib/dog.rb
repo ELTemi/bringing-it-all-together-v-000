@@ -88,7 +88,7 @@ class Dog
     else
       dog = self.create(attributes)
     end
-    dog
+    
   end
 
   def self.find_by_name(name)
