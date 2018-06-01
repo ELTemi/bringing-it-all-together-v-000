@@ -7,7 +7,6 @@ class Dog
     @name = name
     @breed = breed
   end
-  #binding.pry
 
   def self.create_table
     sql = <<-SQL
@@ -40,7 +39,7 @@ class Dog
 
       DB[:conn].execute(sql, self.name, self.breed)
       result = DB[:conn].execute("SELECT * FROM dogs").first
-      self.id = result[0]
+      @id = result[0]
       self
     end
   end
